@@ -111,6 +111,43 @@ p {
   margin-bottom: 0.85rem;
 }
 
+.logo {
+  font-family: var(--ff-logo);
+  text-align: center;
+}
+
+.logo a {
+  color: black;
+  text-decoration: none;
+}
+
+/* navigation */
+
+header {
+  padding: 1em 0 2em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
 /* buttons */
 
 /* Homepage styles */
+
