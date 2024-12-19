@@ -2,9 +2,6 @@
 FONTS
 ****/
 
-/*****
-FONTS
-*****/
 
 @font-face {
   font-family: "BetterFly";
@@ -91,3 +88,29 @@ html {
     font-size: 1.125rem;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+h2, h3 {
+  font-family: var(--ff-title);
+  line-height: 0.8;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  margin-bottom: 0.85rem;
+}
+
+/* buttons */
+
+/* Homepage styles */
