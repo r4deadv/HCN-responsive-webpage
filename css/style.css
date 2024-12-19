@@ -65,6 +65,16 @@ FONTS
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
+
+:root {
+  --clr-text: #3d3d3d;
+  --clr-primary: #067e0a;
+  --clr-accent: #764981;
+
+  --ff-title: 'BFNarrow', sans-serif;
+  --ff-serif:'Crimson Text', serif;
+  --ff-logo: 'BetterFly', sans-serif;
+}
   
 
 *,
@@ -76,6 +86,8 @@ FONTS
 
 html {
     box-sizing: border-box;
-    font-family: 'Crimson Text', serif;
+    font-family: var(--ff-serif);
+    color: var(--clr-text);
+    font-size: 1.125rem;
 }
 
