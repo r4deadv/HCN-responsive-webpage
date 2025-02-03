@@ -66,7 +66,7 @@ FONTS
 :root {
   --clr-text: #3d3d3d;
   --clr-primary: #067e0a;
-  --clr-accent: #764981;
+  --clr-accent: #613b6b;
 
   --ff-title: 'BFNarrow', sans-serif;
   --ff-serif:'Crimson Text', serif;
@@ -85,11 +85,12 @@ html {
     box-sizing: border-box;
     font-family: var(--ff-serif);
     color: var(--clr-text);
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 body {
   margin: 0;
+  text-align: center;
 }
 
 img {
@@ -109,6 +110,7 @@ h1, h2, h3, h4, p {
 h2, h3 {
   font-family: var(--ff-title);
   line-height: 0.8;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -117,6 +119,15 @@ h2 {
 
 p {
   margin-bottom: 0.85rem;
+}
+
+.section-intro {
+  font-size: 3rem
+}
+
+.section-intro small {
+  font-size: 0.7em;
+  display: block;
 }
 
 .text-primary {
@@ -174,6 +185,20 @@ nav a:hover, nav a:focus {
   padding: 15vh 1em;
 }
 
-.intro {
-  text-align: center;
+
+.about-us {
+  background-color: var(--clr-accent);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0;
+}
+
+.about-us__intro {
+  background-image: url(../img/granola-bg.jpg);
+  padding: 3em 1em 1.5em;
+}
+
+.about-us__body {
+  padding: 1.5em 1em 3em;
 }
