@@ -66,7 +66,9 @@ FONTS
 :root {
   --clr-text: #3d3d3d;
   --clr-primary: #067e0a;
+  --clr-primary-dark: #125814;
   --clr-accent: #613b6b;
+  --clr-accent-dark: #44264d;
 
   --ff-title: 'BFNarrow', sans-serif;
   --ff-serif:'Crimson Text', serif;
@@ -100,6 +102,10 @@ img {
 
 section {
   padding: 3em 1em;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 /* Typography */
@@ -191,6 +197,18 @@ nav a:hover, nav a:focus {
   background-color: var(--clr-primary);
 }
 
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--clr-primary-dark);
+}
+
+.btn-accent {
+  background-color: var(--clr-accent);
+}
+
+.btn-accent:hover, .btn-accent:focus {
+  background-color: var(--clr-accent-dark);
+}
+
 /* Homepage styles */
 
 .hero {
@@ -224,4 +242,29 @@ nav a:hover, nav a:focus {
 
 .order-online {
   background: #f0f0f0;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+.product__content {
+  padding: 1.5em;
+}
+
+.product__title {
+  color: var(--clr-primary);
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.fineprint {
+  font-size: 0.5rem;
 }
